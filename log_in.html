@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covoiturage</title>
+    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+
+<body>
+    <header>
+            <nav>
+                <a href="index.html" class="logo"> Covoiturage</a>
+                <ul class="principale">
+                    <li><a href="Recherche.html">
+                            <div class="link-wrap">
+                                <img src="images/search-svgrepo-com (1).svg">
+                                <div><p> Recherche</p></div>
+                            </div>
+                        </a></li>
+                    <li><a href="AjoutTrajet.html">
+                        <div class="link-wrap">
+                            <img src="images/add-circle-svgrepo-com.svg">
+                            <div><p> Publier un trajet</p></div>
+                        </div>
+                    </a></l>
+                </ul>
+                <img src="images/person-circle-fill-svgrepo-com.svg" class="user-pic" onclick="showMenu()">
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <a href="log_in.html" class="sub-menu-links">
+                            <p>connexion</p>
+                            <span>></span>
+                        </a>
+                        <hr>
+                        <a href="Registre.html" class="sub-menu-links">
+                            <p>inscription</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <article>
+        <form class="form">
+            
+            <input placeholder=" Votre e-mail ou le numéro de téléphone " class="input" type="text">
+            <input placeholder="Mot de passe" class="input" type="password" id="password"> 
+            <button id="loginBtn"> <a href="Registre.html"></a>Se Connecter</button>
+            <a id="forgotPassword" href="MotOub.html">Mot de passe oublié?</a>
+            <button class="create" id="createAccountBtn"> <a href="Registre.html">Créer un compte</a></button>
+        </form>
+    </article>
+    <script src="myscripts.js"></script>
+</body>
+
+</html>

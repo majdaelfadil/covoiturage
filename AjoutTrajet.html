@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="styleAjout.css">
+    <link rel="stylesheet" href="styleHeader.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+        
+        <div>
+            <nav>
+                <a href="index.html" class="logo"> Covoiturage</a>
+                <ul class="principale">
+                    <li><a href="Recherche.html">
+                            <div class="link-wrap">
+                              <img src="images/search-svgrepo-com (1).svg">
+                                <div>
+                                    <p> Recherche</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li><a href="AjoutTrajet.html">
+                            <div class="link-wrap">
+                                <img src="images/add-circle-svgrepo-com.svg">
+                                <div>
+                                    <p> Publier un trajet</p>
+                                </div>
+                            </div>
+                        </a></l>
+                </ul>
+                <img src="images/person-circle-fill-svgrepo-com.svg" class="user-pic" onclick="showMenu()">
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <a href="log_in.html" class="sub-menu-links">
+                            <p>connexion</p>
+                            <span>></span>
+                        </a>
+                        <hr>
+                        <a href="Registre.html" class="sub-menu-links">
+                            <p>inscription</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+       
+    </header>
+    <article>
+    <form id="myForm" action="" method="post" autocomplete = "off">
+      <h1 align = center>Ajouter un trajet </h1>
+
+      <div style="text-align:center;">
+        <span class="step" id = "step-1">1</span>
+        <span class="step" id = "step-2">2</span>
+        <span class="step" id = "step-3">3</span>
+       
+      </div>
+
+      <div class="tab" id = "tab-1">
+        <p>Votre trajet:</p>
+        <input type = "text" placeholder="L'adresse de Départ" name="L'adresse de Départ"><br>
+        <input type = "text" placeholder="L'adresse de Destination" name="L'adresse de Destination">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(1, 2);">Suivant</div>
+        </div>
+      </div>
+
+      <!--<div class="tab" id = "tab-2">
+        <p>Plus de détails:</p>
+        <input type = "text" placeholder="Quelle est votre route ?" name="Quelle est votre route ?">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(2, 1);">Précédant</div>
+          <div class="index-btn" onclick="run(2, 3);">Suivant</div>
+        </div>
+      </div>-->
+
+      <div class="tab" id = "tab-2">
+        <p>Quand partez-vous ?:</p>
+        <input type = "text" placeholder="dd" name="dd">
+        <input type = "text" placeholder="mm" name="mm">
+        <input type = "text" placeholder="yy" name="yy">
+        <p>À quelle heure souhaitez-vous retrouver vos passagers?</p>
+        <input type = "text" placeholder="Heure" name="Heure">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(2, 1);">Précédant</div>
+          <div class="index-btn" onclick="run(2, 3);">Suivant</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-3">
+        <p>Combien de passagers pouvez-vous accepter ?</p>
+        <select name="" id="select" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br>
+        <label for="">Fixez votre prix par place</label><br>
+        <input type = "text" placeholder="prix" name="prix">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(3, 2);">Précédant</div>
+          <div class="index-btn" onclick="run(3, 4);">Suivant</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-4">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(3, 4);">Précédant</div>
+          <button class = "index-btn" type="submit" name="submit" style = "background:#184646;">Ajouter trajet</button>
+        </div>
+      </div>
+    </form>
+</article>
+    <script>
+      // Default tab
+      $(".tab").css("display", "none");
+      $("#tab-1").css("display", "block");
+
+      function run(hideTab, showTab){
+        if(hideTab < showTab){ // If not press previous button
+          // Validation if press next button
+          var currentTab = 0;
+          x = $('#tab-'+hideTab);
+          y = $(x).find("input")
+          for (i = 0; i < y.length; i++){
+            if (y[i].value == ""){
+              $(y[i]).css("background", "#ffdddd");
+              return false;
+            }
+          }
+        }
+
+        // Progress bar
+        for (i = 1; i < showTab; i++){
+          $("#step-"+i).css("opacity", "1");
+        }
+
+        // Switch tab
+        $("#tab-"+hideTab).css("display", "none");
+        $("#tab-"+showTab).css("display", "block");
+        $("input").css("background", "#fff");
+      }
+    </script>
+    <script src="myscripts.js"></script>
+  </body>
+</html>
