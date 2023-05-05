@@ -67,7 +67,7 @@ nav ul{
     padding: 2rem;
     font-weight: normal;
 }
-button{
+.hero button{
     padding: 2rem 6rem;
     background: #0a2b19;
     color: #fff;
@@ -132,6 +132,13 @@ button{
 #conduire button{
     margin-top: 25px;
     border-radius: 25px;
+    padding: 2rem 6rem;
+    background: #0a2b19;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
 }
 .titre{
     font-size: 1.8rem;

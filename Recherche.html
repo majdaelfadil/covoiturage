@@ -6,79 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleRecherche.css">
-    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleindex.css">
    
 </head>
 <body onclick="hidMenu()">
-   <header>
-
-        <div>
-            <nav>
-                <a href="index.html" class="logo"> Covoiturage</a>
-                <ul class="principale">
-                    <li><a href="Recherche.html">
-                            <div class="link-wrap">
-                                <img src="images/search-svgrepo-com (1).svg">
-                                <div>
-                                    <p> Recherche</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="AjoutTrajet.html">
-                            <div class="link-wrap">
-                                <img src="images/add-circle-svgrepo-com.svg">
-                                <div>
-                                    <p> Publier un trajet</p>
-                                </div>
-                            </div>
-                        </a></l>
-                </ul>
-                <img src="images/person-circle-fill-svgrepo-com.svg" class="user-pic" onclick="showMenu()">
-
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
-                        <a href="log_in.html" class="sub-menu-links">
-                            <p>connexion</p>
-                            <span>></span>
-                        </a>
-                        <hr>
-                        <a href="Registre.html" class="sub-menu-links">
-                            <p>inscription</p>
-                            <span>></span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
+    <header class="main-head">
+        <nav>
+            <h2 id="logo">Covoiturage</h2>
+            <ul>
+                <li><a href="AjoutTrajet.html">Ajouter Trajet</a></li>
+                <li><a href="Recherche.html">Recherche</a></li>
+                <li><a href="log_in.html">Se Connecter</a></li>
+            </ul>
+        </nav>
     </header>
     <article>
-        <div class="container">
-            <h1>Où voulez-vous aller ?</h1>
-            <div class="search-bar">
-                <form action="">
-                    <div class="Départ">
-                        <label>Départ</label>
-                        <input type="text" placeholder="Départ">
-                    </div>
-                    <div>
-                        <label>Déstination</label>
-                        <input type="text" placeholder="Déstination">
-                    </div>
-                    <div>
-                        <label>Date</label>
-                        <input type="date" placeholder="Ajouter la date">
-                    </div>
-                    <div>
-                        <label>Personne</label>
-                        <input type="number" placeholder="Personne" min="1" max="4">                        
-                    </div>
-                    <button type="submit"><img src="images/search-svgrepo-com (1).svg"></button>
-                </form>
-
-            </div>
-
-        </div>
+        
     </article>
+    
 </body>
 </html>
