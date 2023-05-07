@@ -22,23 +22,28 @@
             </ul>
         </nav>
     </header>
-    <article>
-        <div class="texte">
-        <form class="form">
-            
-            <input placeholder=" Votre e-mail ou le numéro de téléphone " class="input" type="text">
-            <input placeholder="Mot de passe" class="input" type="password" id="password"> 
-            <button id="loginBtn"> <a href="Registre.html"></a>Se Connecter</button>
-            <a id="forgotPassword" href="MotOub.html">Mot de passe oublié?</a>
-            <button class="create" id="createAccountBtn"> <a href="Registre.html"></a>Créer nouveau compte</button>
-        </form>
-        <div id="div1">
-        <h1>Avec notre application réservez votre place pour vous déplacer rapidement partout</h1>
+ <div class="frst">  
+ <div class="main">
+    <div class="title">Covoiturage</div>
+    <form>
+        <div class="credentials">
+            <div class="username">
+                <span class="glyphicon glyphicon-user"></span>
+                <input type="email" name="username" placeholder="Votre email" required>
+            </div>          
+            <div class="password">
+                <span class="glyphicon glyphicon-lock"></span>
+                <input type="password" name="password" placeholder="Votre mot de passe" required>
+            </div>
         </div>
-        </div>
-    </article>
-    
-    <script src="myscripts.js"></script>
+        <button class="submit">Connecter</button>
+    </form>
+    <div class="link">
+        <a href="RecupMotPass.html">Mot de passe oublier</a><br><a href="Registre.html">S'inscrire</a>
+
+    </div>
+ </div>
+</div> 
 </body>
 
 </html>
