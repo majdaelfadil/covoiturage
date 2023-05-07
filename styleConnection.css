@@ -88,3 +88,6 @@ article{
   #createAccountBtn:hover {
     background: blue;
   }
+  @media screen and (max-width:885px){
+    
+}
