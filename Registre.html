@@ -6,102 +6,79 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='styleHeader.css'>
+    <link rel='stylesheet' type='text/css' href='styleindex.css'>
     <link rel="stylesheet" href="styleRegistre.css">
     
 </head>
 
 <body>
-    <header>
-
-        <div class="hero">
-            <nav>
-                <a href="index.html" class="logo"> Covoiturage</a>
-                <ul class="principale">
-                    <li><a href="Recherche.html">
-                            <div class="link-wrap">
-                                <img src="images/search-svgrepo-com (1).svg">
-                                <div>
-                                    <p> Recherche</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="AjoutTrajet.html">
-                            <div class="link-wrap">
-                                <img src="images/add-circle-svgrepo-com.svg">
-                                <div>
-                                    <p> Publier un trajet</p>
-                                </div>
-                            </div>
-                        </a></l>
-                </ul>
-                <img src="images/person-circle-fill-svgrepo-com.svg" class="user-pic" onclick="showMenu()">
-
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
-                        <a href="log_in.html" class="sub-menu-links">
-                            <p>connexion</p>
-                            <span>></span>
-                        </a>
-                        <hr>
-                        <a href="Registre.html" class="sub-menu-links">
-                            <p>inscription</p>
-                            <span>></span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <header class="main-head">
+        <nav>
+            <h2 id="logo">Covoiturage</h2>
+            <ul>
+                <li><a href="AjoutTrajet.html">Ajouter Trajet</a></li>
+                <li><a href="Recherche.html">Recherche</a></li>
+                <li><a href="log_in.html">Se Connecter</a></li>
+            </ul>
+        </nav>
     </header>
-    <article>
-        <form action="#" method="POST" enctype="multipart/form-data">
-           
+    <div class="frst">
+    <section class="container">
+        <header>Inscription</header>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>Nom</label>
+            <input type="text" placeholder="Votre nom" required />
+          </div>
+          <div class="input-box">
+            <label>Prénom</label>
+            <input type="text" placeholder="Votre Prenom" required />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Nombre de téléphone</label>
+              <input type="number" placeholder="Enter phone number" required />
+            </div>
+            <div class="input-box">
+              <label>Date de naissance</label>
+              <input type="date" placeholder="Enter birth date" required />
+            </div>
+          </div>
+          <div class="gender-box">
+            <h3>Sexe</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" checked />
+                <label for="check-male">Homme</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Femme</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Email</label>
+            <input type="email" placeholder="Votre email" required />
             <div class="column">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required><br>
-
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom" required><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-               
-                <label for="password">mot de pass:</label>
-                <input type="password" id="password" name="password" required><br>
-               
-                <label for="password">confirmer votre mot de passe:</label>
-                <input type="password" id="password" name="password" required><br>
-               
-                <label for="date">Date de naissance:</label>
-                <input type="date" id="date" name="date" required><br>
+              <div class="select-box">
+                <select>
+                  <option hidden>Ville</option>
+                </select>
+              </div>
             </div>
-
-            <div class="column" id="ss">
-                <label for="sexe">Sexe:</label>
-                <select id="sexe" name="sexe" required>
-                    <option value="homme">Homme</option>
-                    <option value="femme">Femme</option>
-                </select><br>
-
-                <label for="telephone">Téléphone:</label>
-                <input type="tel" id="telephone" name="telephone" required><br>
-
-                <label for="ville">Ville:</label>
-                <input type="text" id="ville" name="ville" required><br>
-
-                <label for="picture">Photo de profil:</label>
-                <input type="file" id="picture" name="picture" ><br>
-                
-                <input type="submit" value="S'inscrire">
+            <div class="column">
+              <input type="password" placeholder="Votre mot de passe" required />
+              <input type="password" placeholder="Confirmer votre mot de passe" required />
             </div>
+          </div>
+          <button>S'inscrire</button>
         </form>
-
-
-
-
-
-    </article>
-    <script src="myscripts.js"></script>
+        <div class="link">
+            <a href="log_in.html">T'as déjà un compte ?</a>
+        </div>
+      </section>
+    </div>
 </body>
 
 </html>
