@@ -81,6 +81,7 @@ h4,h5{
   background: #0a2b19;
   transition: .5s;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .submit:hover {
   background:  gainsboro;
