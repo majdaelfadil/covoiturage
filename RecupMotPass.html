@@ -6,75 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covoiturage</title>
-    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="styleRecup.css">
     
 </head>
 
-<body onclick="hidMenu()">
-    <header>
-        
-        <div>
-            <nav>
-                <a href="index.html" class="logo"> Covoiturage</a>
-                <ul class="principale">
-                    <li><a href="Recherche.html">
-                            <div class="link-wrap">
-                              <img src="images/search-svgrepo-com (1).svg">
-                                <div>
-                                    <p> Recherche</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="AjoutTrajet.html">
-                            <div class="link-wrap">
-                                <img src="images/add-circle-svgrepo-com.svg">
-                                <div>
-                                    <p> Publier un trajet</p>
-                                </div>
-                            </div>
-                        </a></l>
-                </ul>
-                <img src="images/person-circle-fill-svgrepo-com.svg" class="user-pic" onclick="showMenu()">
-
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
-                        <a href="log_in.html" class="sub-menu-links">
-                            <p>connexion</p>
-                            <span>></span>
-                        </a>
-                        <hr>
-                        <a href="Registre.html" class="sub-menu-links">
-                            <p>inscription</p>
-                            <span>></span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-       
+<body>
+    <header class="main-head">
+        <nav>
+            <h2 id="logo">Covoiturage</h2>
+            <ul>
+                <li><a href="AjoutTrajet.html">Ajouter Trajet</a></li>
+                <li><a href="Recherche.html">Recherche</a></li>
+                <li><a href="log_in.html">Se Connecter</a></li>
+            </ul>
+        </nav>
     </header>
-    <article>
-        
-        <div>
-            <form action="" class="form">
-                <h1>Récuperer votre compte</h1>
-                <label for="">Veuillez entrer votre Nouveau mot de passe</label><br>
-                <input placeholder=" Votre e-mail  " class="input" type="text">
-                <input placeholder=" Nouveau mot de passe " class="input" type="password">
-                <input placeholder=" Confirmer votre mot de passe " class="input" type="password">
-                <input type="submit" value="Envoyer" class="loginBtn">
-                
-            </form>
+ <div class="frst">  
+ <div class="main">
+    <div class="title">Recuperation de mot de passe</div>
+    <form>
+        <div class="password1">
+            <div class="username">
+                <span class="glyphicon glyphicon-user"></span>
+                <input type="password" name="password1" placeholder="Nouveau mot de passe" required>
+            </div>          
+            <div class="password2">
+                <span class="glyphicon glyphicon-lock"></span>
+                <input type="password" name="password2" placeholder=" Confirmer le mot de passe" required>
+            </div>
         </div>
-    </article>
-    <footer>
-
-
-
-
-    </footer>
-    <script src="myscripts.js"></script>
+        <button class="submit">Envoyer</button>
+    </form>
+ </div>
+</div> 
 </body>
 
 </html>
