@@ -4,52 +4,20 @@
     <meta charset="utf-8">
     <title>Multi Step Form</title>
     <link rel="stylesheet" href="styleAjout.css">
-    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleindex.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
-        
-        <div>
-            <nav>
-                <a href="index.html" class="logo"> Covoiturage</a>
-                <ul class="principale">
-                    <li><a href="Recherche.html">
-                            <div class="link-wrap">
-                              <img src="images/search-svgrepo-com (1).svg">
-                                <div>
-                                    <p> Recherche</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li><a href="AjoutTrajet.html">
-                            <div class="link-wrap">
-                                <img src="images/add-circle-svgrepo-com.svg">
-                                <div>
-                                    <p> Publier un trajet</p>
-                                </div>
-                            </div>
-                        </a></l>
-                </ul>
-                <img src="images/person-circle-fill-svgrepo-com.svg" class="user-pic" onclick="showMenu()">
-
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
-                        <a href="log_in.html" class="sub-menu-links">
-                            <p>connexion</p>
-                            <span>></span>
-                        </a>
-                        <hr>
-                        <a href="Registre.html" class="sub-menu-links">
-                            <p>inscription</p>
-                            <span>></span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-       
-    </header>
+  <header class="main-head">
+    <nav>
+        <h2 id="logo">Covoiturage</h2>
+        <ul>
+            <li><a href="AjoutTrajet.html">Ajouter Trajet</a></li>
+            <li><a href="Recherche.html">Recherche</a></li>
+            <li><a href="log_in.html">Se Connecter</a></li>
+        </ul>
+    </nav>
+</header>
     <article>
     <form id="myForm" action="" method="post" autocomplete = "off">
       <h1 align = center>Ajouter un trajet </h1>
@@ -58,6 +26,7 @@
         <span class="step" id = "step-1">1</span>
         <span class="step" id = "step-2">2</span>
         <span class="step" id = "step-3">3</span>
+    
        
       </div>
 
@@ -70,14 +39,14 @@
         </div>
       </div>
 
-      <!--<div class="tab" id = "tab-2">
+      <div class="tab" id = "tab-2">
         <p>Plus de détails:</p>
         <input type = "text" placeholder="Quelle est votre route ?" name="Quelle est votre route ?">
         <div class="index-btn-wrapper">
           <div class="index-btn" onclick="run(2, 1);">Précédant</div>
           <div class="index-btn" onclick="run(2, 3);">Suivant</div>
         </div>
-      </div>-->
+      </div>
 
       <div class="tab" id = "tab-2">
         <p>Quand partez-vous ?:</p>
@@ -87,20 +56,22 @@
         <p>À quelle heure souhaitez-vous retrouver vos passagers?</p>
         <input type = "text" placeholder="Heure" name="Heure">
         <div class="index-btn-wrapper">
-          <div class="index-btn" onclick="run(2, 1);">Précédant</div>
-          <div class="index-btn" onclick="run(2, 3);">Suivant</div>
+          <div class="index-btn" onclick="run(3, 2);">Précédant</div>
+          <div class="index-btn" onclick="run(3, 4);">Suivant</div>
         </div>
       </div>
 
       <div class="tab" id = "tab-3">
         <p>Combien de passagers pouvez-vous accepter ?</p>
+        <div class="select-box">
         <select name="" id="select" >
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
         </select><br>
-        <label for="">Fixez votre prix par place</label><br>
+      </div>
+        <p>Fixez votre prix par place</p>
         <input type = "text" placeholder="prix" name="prix">
         <div class="index-btn-wrapper">
           <div class="index-btn" onclick="run(3, 2);">Précédant</div>
@@ -110,8 +81,8 @@
 
       <div class="tab" id = "tab-4">
         <div class="index-btn-wrapper">
-          <div class="index-btn" onclick="run(3, 4);">Précédant</div>
-          <button class = "index-btn" type="submit" name="submit" style = "background:#184646;">Ajouter trajet</button>
+          <div class="index-btn" onclick="run(4, 3);">Précédant</div>
+          <button class = "index-btn" type="submit" name="submit">Ajouter trajet</button>
         </div>
       </div>
     </form>
@@ -146,6 +117,5 @@
         $("input").css("background", "#fff");
       }
     </script>
-    <script src="myscripts.js"></script>
   </body>
 </html>

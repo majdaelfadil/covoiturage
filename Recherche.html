@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styleindex.css">
    
 </head>
-<body onclick="hidMenu()">
+<body>
     <header class="main-head">
         <nav>
             <h2 id="logo">Covoiturage</h2>
@@ -20,9 +20,40 @@
             </ul>
         </nav>
     </header>
-    <article>
-        
-    </article>
+    <div class="frst">
+    <section class="container">
+        <h1>Trouvez votre destination</h1>
+        <div class="search-bar">
+        <form>
+            <div class="depart-input">
+                <label>Départ</label>
+                <input type="text" placeholder="Votre départ">
+            </div>
+            <span class="vertical-line"></span>
+            <div class="destination-input">
+                <label>Déstination</label>
+                <input type="text" placeholder="Votre déstination">
+            </div>
+            <span class="vertical-line"></span>
+            <div class="date-input">
+                <label>Date</label>
+                <input class="tst" type="date" placeholder="La date">
+            </div>
+            <span class="vertical-line"></span>
+            <div class="nbr-input">
+                <label>Passagers</label>
+                <input type="number" min="1" max="4" placeholder="Passagers">
+            </div>
+            <div>
+                <button>Chercher</button>
+            </div>
+        </div>
+        </form>
+
+    </section>
+    </div>
+
+    
     
 </body>
 </html>

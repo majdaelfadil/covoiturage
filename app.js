@@ -13,3 +13,6 @@ const observer = new IntersectionObserver((entries)=>{
 
 const hiddenElemnts = document.querySelectorAll('.hidden');
 hiddenElemnts.forEach((el)=>observer.observe(el));
+
+
+
