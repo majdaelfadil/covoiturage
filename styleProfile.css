@@ -53,7 +53,7 @@
   background-attachment: fixed;
   background-size: cover;
 }
-.profile {
+#profile {
   position: relative;
   max-width: 700px;
   width: 100%;
@@ -66,13 +66,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.profile header {
+#profile header {
   font-size: 3rem;
   color: #0A2B19;
   font-weight: 700;
   text-align: center;
 }
-.profile .form {
+#profile .form {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -148,48 +148,25 @@
   color: #0A2B19;
 }
 /*Responsive*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 521px) {
   .form .column {
     flex-wrap: wrap;
   }
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
   }
+  .vertical-line{
+    display: block;
+  }
+
 }
 .link{
   margin: 10px;
   text-align: center;
 }
-.profile{
+/*.profile{
     display: none;
-}
-.trajets{
-    position: relative;
-    max-width: 700px;
-    width: 100%;
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.trajets header {
-    font-size: 3rem;
-    color: #333;
-    font-weight: 700;
-    text-align: center;
-}
-.trajets .form {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    flex-direction: column;
-  }
+}*/
 .DH label {
     color: #333;
     font-size: 1.8rem;
@@ -199,6 +176,129 @@
     display: flex;
     column-gap: 15px;
   }
-  .trajets{
-    display: none;
+#preferences{
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
+#preferences h3{
+  color: #0A2B19;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#preferences .option{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  column-gap: 50px;
+  flex-wrap: wrap;
+  padding: 0px 90px;
+  font-size: 1.5rem;
+  color: #0A2B19;
+}
+.option1{
+  column-gap: 5px;
+}
+#preferences input{
+  accent-color:  #0A2B19;
+}
+/*.preferences{
+  display: none;
+}*/
+#trajets{
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+}
+.personnels{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+
+}
+.personnels img{
+  width: 90px;
+  height: 90px;
+}
+/*.vertical-line{
+  border-left: 2px solid  #707070;
+  display: inline-block;
+  height:200px;
+  margin: 0 20px;
+}*/
+.infodh{
+  display: flex;
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.infdepdes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#ddd;
+  border-radius: 5px;
+  height: 35px;
+  
+}
+.infdepdes img{
+  width: 15px;
+}
+.depart{
+  display: flex;
+}
+.destination{
+  display: flex;
+}
+.passaget{
+  display: flex;
+}
+.autre img{
+  width: 15px;
+}
+.prix{
+  display: flex;
+  justify-content: right;
+  color: red;
+  font-weight: 900;
+  font-size: 20px;
+}
+#pressedbtn{
+  background-color: gainsboro;
+  border-radius: 25px;
+  padding: 15px;
+  color: #0A2B19;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
