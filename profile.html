@@ -1,105 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleindex.css">
-    <link rel="stylesheet" href="styleProfile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <header class="main-head">
-        <nav>
-            <h2 id="logo">Covoiturage</h2>
-            <ul>
-                <li><a href="AjoutTrajet.html">Ajouter Trajet</a></li>
-                <li><a href="Recherche.html">Recherche</a></li>
-                <li><a href="log_in.html">Se Connecter</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="frst">
-    <section class="pre">
-        <div class="navv">
-        <ul>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Mes trajets</a></li>
-            <li><a href="#">Mes préferences</a></li>
-        </ul>
-        </div>
-    </section>
-    <section class="profile">
-            <header>Informations personnels</header>
-            <form action="#" class="form">
-              <div class="input-box">
-                <label>Nom</label>
-                <input type="text" placeholder="Votre nom"/>
-              </div>
-              <div class="input-box">
-                <label>Prénom</label>
-                <input type="text" placeholder="Votre Prenom"/>
-              </div>
-              <div class="column">
-                <div class="input-box">
-                  <label>Numero de téléphone</label>
-                  <input type="number" placeholder="Votre numero de téléphone" />
-                </div>
-                <div class="input-box">
-                  <label>Date de naissance</label>
-                  <input type="date" placeholder="Enter birth date"/>
-                </div>
-              </div>
-        
-            <div class="input-box address">
-                <label>Ville</label>
-                <input type="text" placeholder="Votre ville"/>
-                <label>Adresse</label>
-                <input type="texte" placeholder="Votre adresse"/>
-                <label>Mot de passe</label>
-                <input type="password" placeholder="Votre mot de passe"/>
-            </div>
-              <button>Enregistrer les modifications</button>
-            </form>
-    </section>
-    <section class="trajets">
-      <div class="details">
-        <div class="inf">
 
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleindex.css">
+  <link rel="stylesheet" href="styleProfile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="main-head">
+    <nav>
+      <h2 id="logo">Covoiturage</h2>
+      <ul>
+        <li><a href="AjoutTrajet.html">Ajouter Trajet</a></li>
+        <li><a href="Recherche.html">Recherche</a></li>
+        <li><a href="log_in.html">Se Connecter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="frst">
+    <section class="pre">
+      <div class="navv">
+        <ul>
+          <li><a href="#" id="btnprofile">Profile</a></li>
+          <li><a href="#" id="btntrajets">Mes trajets</a></li>
+          <li><a href="#" id="btnpreferences">Mes préferences</a></li>
+        </ul>
       </div>
-        
     </section>
-    <section class="preferences">
+    <section id="profile">
+      <header>Informations personnels</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Nom</label>
+          <input type="text" placeholder="Votre nom" />
+        </div>
+        <div class="input-box">
+          <label>Prénom</label>
+          <input type="text" placeholder="Votre Prenom" />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Numero de téléphone</label>
+            <input type="number" placeholder="Votre numero de téléphone" />
+          </div>
+          <div class="input-box">
+            <label>Date de naissance</label>
+            <input type="date" placeholder="Enter birth date" />
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label>Ville</label>
+          <input type="text" placeholder="Votre ville" />
+          <label>Adresse</label>
+          <input type="texte" placeholder="Votre adresse" />
+          <label>Mot de passe</label>
+          <input type="password" placeholder="Votre mot de passe" />
+        </div>
+        <button>Enregistrer les modifications</button>
+      </form>
+    </section>
+    <section id="trajets">
+      <div class="personnels">
+        <img src="images/profile-circle-svgrepo-com.svg" alt="">
+        <p><strong>MAJIDA EL-FADIL</strong></p>
+      </div>
+      <span class="vertical-line"></span>
+      <div class="container">
+        <div class="infodh">
+          <h5>15/10/2022</h5>
+          <h5>&nbsp;A&nbsp;</h5>
+          <h5>10:50</h5>
+        </div><br>
+        <div class="infdepdes">
+          <p><strong>agadir</strong></p>&nbsp;&nbsp;
+          <img src="images/arrow-right-svgrepo-com (1).svg" alt="">&nbsp;&nbsp;
+          <p><strong>casablancacasa</strong></p>
+        </div><br>
+        <div class="autre">
+        <div class="depart">
+          <img src="images/location-svgrepo-com.svg" alt="">&nbsp;&nbsp;
+          <p><strong>agadir</strong></p>
+        </div><br>
+        <div class="destination">
+          <img src="images/location-svgrepo-com.svg" alt="">&nbsp;&nbsp;
+          <p><strong>casablancacasa</strong></p>
+        </div><br>
+        <div class="passaget">
+          <img src="images/person-team-svgrepo-com.svg" alt="">&nbsp;&nbsp;
+          <p><strong>2</strong></p>
+        </div><br>
+      </div>
+      <div class="prix">
+        <p><strong>200DH</strong></p>
+      </div>
+      </div>
+
+    </section>
+    <section id="preferences">
       <div class="music-box">
         <h3>Musique</h3>
-        <div class="music-option">
+        <div class="option">
           <div class="music">
-            <input type="radio" id="check-misic" name="music" checked />
+            <input type="radio" id="check-music" name="music" />
             <label for="check-musique">Oui</label>
           </div>
-          <div class="music-option">
+          <div class="option1">
             <input type="radio" id="check-music1" name="music" />
             <label for="check-music1">Non</label>
           </div>
         </div>
       </div>
-      <div class="m-box">
-        <h3>Musique</h3>
-        <div class="music-option">
-          <div class="music">
-            <input type="radio" id="check-misic" name="music" checked />
+      <div class="animaux-box">
+        <h3>Animal</h3>
+        <div class="option">
+          <div class="animal">
+            <input type="radio" id="check-animal" name="animal" />
             <label for="check-musique">Oui</label>
           </div>
-          <div class="music-option">
-            <input type="radio" id="check-music1" name="music" />
-            <label for="check-music1">Non</label>
+          <div class="option1">
+            <input type="radio" id="check-animal1" name="animal" />
+            <label for="check-animal1">Non</label>
           </div>
         </div>
       </div>
-
+      <div class="fumeur-box">
+        <h3>Fumeur</h3>
+        <div class="option">
+          <div class="fumeur">
+            <input type="radio" id="check-fumeur" name="fumeur" />
+            <label for="check-fumeur">Oui</label>
+          </div>
+          <div class="option1">
+            <input type="radio" id="check-fumeur1" name="fumeur" />
+            <label for="check-fumeur1">Non</label>
+          </div>
+        </div>
+      </div>
+      <div class="discussion-box">
+        <h3>Discussion</h3>
+        <div class="option">
+          <div class="discussion">
+            <input type="radio" id="check-discussion" name="discussion" />
+            <label for="check-fumeur">Oui</label>
+          </div>
+          <div class="option1">
+            <input type="radio" id="check-discussion1" name="discussion" />
+            <label for="check-discussion1">Non</label>
+          </div>
+        </div>
+      </div>
     </section>
-    </div>
+  </div>
 </body>
+<script>
+  // Sélectionne les boutons
+const btnSection1 = document.getElementById('btnprofile');
+const btnSection2 = document.getElementById('btntrajets');
+const btnSection3 = document.getElementById('btnpreferences');
+
+// Sélectionne les sections correspondantes
+const section1 = document.getElementById('profile');
+const section2 = document.getElementById('trajets');
+const section3 = document.getElementById('preferences');
+
+// Fonctions pour afficher/cacher les sections
+function afficherSection1() {
+  section1.style.display = 'block';
+  section2.style.display = 'none';
+  section3.style.display = 'none';
+}
+
+
+function afficherSection2() {
+  section1.style.display = 'none';
+  section2.style.display = 'flex';
+  section3.style.display = 'none';
+}
+
+function afficherSection3() {
+  section1.style.display = 'none';
+  section2.style.display = 'none';
+  section3.style.display = 'block';
+}
+
+section2.style.display = 'none';
+section3.style.display = 'none';
+
+// Associe les fonctions aux événements de clic sur les boutons
+btnSection1.addEventListener('click', afficherSection1);
+btnSection2.addEventListener('click', afficherSection2);
+btnSection3.addEventListener('click', afficherSection3);
+</script>
+
 </html>
