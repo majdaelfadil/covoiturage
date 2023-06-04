@@ -29,6 +29,7 @@
           <li><a href="#" id="btnprofile">Profile</a></li>
           <li><a href="#" id="btntrajets">Mes trajets</a></li>
           <li><a href="#" id="btnpreferences">Mes préferences</a></li>
+          <li><a href="" id="btnvoiture">Ma véhicule</a></li>
         </ul>
       </div>
     </section>
@@ -156,6 +157,43 @@
         </div>
       </div>
     </section>
+    <section id="voiture">
+      <header>Ma véhicule</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Marque</label>
+          <input type="text" placeholder="Ex:Renault" />
+        </div>
+        <div class="input-box">
+          <label>Modèle</label>
+          <input type="text" placeholder="Ex:clio" />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Confort</label>
+            <select>
+              <option value="" selected>Choisissez</option>
+              <option value="">Basique</option>
+              <option value="">Normal</option>
+              <option value="">Confortable</option>
+              <option value="">Luxe</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label>Nombre de place</label>
+            <select>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+        </div>
+
+
+        <button>Enregistrer les modifications</button>
+      </form>
+    </section>
   </div>
 </body>
 <script>
@@ -163,17 +201,20 @@
 const btnSection1 = document.getElementById('btnprofile');
 const btnSection2 = document.getElementById('btntrajets');
 const btnSection3 = document.getElementById('btnpreferences');
+const btnSection4 = document.getElementById('btnvoiture');
 
 // Sélectionne les sections correspondantes
 const section1 = document.getElementById('profile');
 const section2 = document.getElementById('trajets');
 const section3 = document.getElementById('preferences');
+const section4 = document.getElementById('voiture');
 
 // Fonctions pour afficher/cacher les sections
 function afficherSection1() {
   section1.style.display = 'block';
   section2.style.display = 'none';
   section3.style.display = 'none';
+  section4.style.display = 'none';
 }
 
 
@@ -181,21 +222,29 @@ function afficherSection2() {
   section1.style.display = 'none';
   section2.style.display = 'flex';
   section3.style.display = 'none';
+  section4.style.display = 'none';
 }
 
 function afficherSection3() {
   section1.style.display = 'none';
   section2.style.display = 'none';
   section3.style.display = 'block';
+  section4.style.display = 'none';
 }
-
+function afficherSection4() {
+  section1.style.display = 'none';
+  section2.style.display = 'none';
+  section3.style.display = 'none';
+  section4.style.display = 'block';
+}
+section1.style.display = 'none';
 section2.style.display = 'none';
 section3.style.display = 'none';
+
 
 // Associe les fonctions aux événements de clic sur les boutons
 btnSection1.addEventListener('click', afficherSection1);
 btnSection2.addEventListener('click', afficherSection2);
 btnSection3.addEventListener('click', afficherSection3);
 </script>
-
 </html>

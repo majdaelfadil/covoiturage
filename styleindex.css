@@ -87,6 +87,11 @@ nav ul{
     #logo{
         padding: 2rem;
     }
+    .description2 img{
+        border-radius: 50px;
+        height: 150px;
+        width: 150px;
+    }
 }
 .description{
     min-height: 60vh;
@@ -193,3 +198,4 @@ footer{
     font-size: 10px;
     
 }
+
